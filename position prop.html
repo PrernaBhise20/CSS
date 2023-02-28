@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <style>
+    /* *{
+        margin: 0;
+        padding: 0;
+    } */
+    ul{
+        list-style: square;
+    }
+        li{
+             
+            /* display: inline; */
+                   }
+        header{
+            background-color:black;
+            color: white;
+            margin: auto;
+            text-align: center;
+            position: sticky;
+            z-index: 2px;
+          
+        }
+        p{
+            text-align: center;
+            border: 2px solid gray;
+        }
+        .container{
+            background-color: aqua;
+            color: red;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            color: white;
+            position: relative;
+            top: 25px;
+            left: 16vw;
+            border: 2px solid white;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(51, 235, 66);
+            color: white;
+            position: relative;
+            top: 25px;
+            bottom:5500PX;
+            right: 35PX; 
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <nav>
+             <ul>
+                 <li>Home</li>
+                 <li>About</li>
+                 <li>Contact</li>
+             </ul>
+         </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos nisi a illo totam itaque aliquam, porro vero ea atque eveniet facilis reprehenderit ipsum inventore illum vitae rem, qui expedita voluptatem impedit distinctio ullam. Nesciunt.</p>
+    
+    <div class="box"> I am a Box</div>
+    <div class="box2"> I am a Box2</div>
+</div>
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Orange</li>
+</ul>
+
+</body>
+</html>

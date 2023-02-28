@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set - 8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 122px;
+            background-color: black;
+        }
+
+        main {
+            height: 899px;
+            background-color: aqua;
+        }
+
+        .container {
+            height: 5px;
+            width: 207vh;
+            background-color: red;
+            animation-name: thinpro;
+            animation-duration: 100s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation: thinpro 10s;
+        }
+
+        @keyframes thinpro {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                width: 40vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes slide1{
+            0%{
+                transform:translate(-8vw) ;
+            }
+            100%{
+                transform: translate(85vw);
+            }
+        }
+        @keyframes slide2{
+            0%{
+                transform:translate(0vw) ;
+            }
+            100%{
+                transform: translate(92vw);
+            }
+        }
+
+        img{
+            display: block;
+            margin: auto;
+            text-align: center;
+            animation: rotate 1s ease-in infinite;
+        }
+        .slider {
+            background-color: blue;
+            height: 523px;
+            width: 100vw;
+            overflow: hidden;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .img{
+            transform: translate(-8vw);
+            animation: slide1 1s 2s forwards;
+        }
+
+        .img2{
+            transform: translate(0vw);
+            animation: slide2 1s 2s forwards;
+        }
+        .img3{
+            transform: translate(8vw);
+            animation: slide3 1s 2s forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <div class="container"></div>
+    <main>
+        <img src="dragon1.jpq.png" alt="" width="122px"> 
+        <!-- <div class="slider">
+            <img class="img1" src="img1.jpq.jpg" alt="">
+            <img class="img2" src="img1.jpq.jpg" alt="">
+            <img class="img3" src="img1.jpq.jpg" alt="">
+        </div> -->
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+     .container{
+         background-color: red;
+         height: 125px;
+     }
+     .box{
+         border: 2px solid black;
+         display: inline-block;
+         /* transform: translate(134px,76px)  rotate(56deg); */
+         /* transform-origin: 0; */
+         /* transform: scaleX(0.76 0.56); */
+         /* transform: skew(30deg, 20deg);  */ 
+         /* transform:scale(2, 0.5); 
+         /* transform:matrix(1, 2, 3, 4, 5, 6); */
+         /* transform:translate(120px, 50%) ; */
+         /* transform:rotate(2.5turn); ;
+         transform:scale(0.5) translate(-100%, -100%) ; */
+         /* transform: rotateX(45deg);*/
+          height: 100px;
+          width: 100px;
+     }
+     /* .img:hover{
+         width:56px; */
+    
+     img{
+         width: 200px;
+         /* transition-property: width;
+         transition-duration: 1s;
+         transition-timing-function: ease-in;
+         transition-delay: 3s; */
+         transition: width 1s ease-in-out 2s;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <!-- <div class="box"><img src="img1.jpq.jpg" alt=""></div>  -->
+        <div class="box"><img id="myImage" src="https://source.unsplash.com/user/wsanter
+
+            " alt=""></div>
+            <button id="btn">Toggle</button>
+    </div>
+</body>
+<script>
+    myImage.style.width='200px';
+    btn.addEventListener("Click",()=>{
+      if(  myImage.style.width === 546px) {
+       myImage.style.width="200"
+      }
+      if(  myImage.style.width === 200px){
+        
+        myImage.style.width="546"
+        }
+    }
+</script>
+</html>
